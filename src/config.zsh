@@ -89,3 +89,7 @@ typeset -g ZSH_AUTOSUGGEST_ORIGINAL_WIDGET_PREFIX=autosuggest-orig-
 # Max size of buffer to trigger autosuggestion. Leave null for no upper bound.
 (( ! ${+ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE} )) &&
 typeset -g ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=
+
+# Pty name for capturing completions for completion suggestion strategy
+(( ! ${+ZSH_AUTOSUGGEST_COMPLETIONS_PTY_NAME} )) &&
+typeset -g ZSH_AUTOSUGGEST_COMPLETIONS_PTY_NAME=zsh_autosuggest_completion_pty
